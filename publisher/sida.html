@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+  <title>
+IATI Dashboard - Validation
+</title>
+  <style>
+    .big-number {
+      font-size: 100px;
+    }
+    .title-number {
+      font-weight: bold;
+      float: left;
+      width: 20%;
+    }
+    .title-text {
+      float: left;
+    }
+    .panel-heading {
+        clear: both;
+    }
+    .break {
+        word-break:break-all;
+    }
+.tablesorter-default .tablesorter-header {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+	background-position: center left;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.tablesorter-default thead .headerSortUp,
+.tablesorter-default thead .tablesorter-headerSortUp,
+.tablesorter-default thead .tablesorter-headerAsc {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+	border-bottom: #000 2px solid;
+}
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+	border-bottom: #000 2px solid;
+}
+.tablesorter-header-inner {
+  margin-left:10px;
+}
+html,body{height:100%;}
+#wrap{min-height:100%;height:auto;margin:0 auto -60px;padding:0 0 60px;}
+#footer{height:80px;background-color:#f5f5f5;}
+.container .text-muted{margin: 20px 0 0 0;}
+  </style>
+  
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">IATI Dashboard</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="../index.html">Publishers</a></li>
+      <li><a href="../files.html">Files</a></li>
+      <li><a href="../download.html">Download Errors</a></li>
+      <li><a href="../xml.html">XML Errors</a></li>
+      <li><a href="../validation.html">Validation</a></li>
+      <li><a href="../versions.html">Versions</a></li>
+      <li><a href="../licenses.html">Licenses</a></li>
+      <li><a href="../organisation.html">Organisation XML</a></li>
+      <li><a href="../elements.html">Elements</a></li>
+      <li><a href="../codelists.html">Codelists</a></li>
+      <li><a href="../github.html">GitHub</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+    
+    <div class="page-header">
+      <h1>Publisher: sida</h1>
+      <p class="lead"></p>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>Reporting Org(s)</td>
+                <td>
+                
+                <code>SE-2</code>
+                
+                <code>SE-6</code>
+                
+                <code>SE-99</code>
+                
+                </td>
+            </tr><tr>
+                <td>Activity Files</td>
+                <td>26</td>
+            </tr><tr>
+                <td>Organisation Files</td>
+                <td>0</td>
+            </tr><tr>
+                <td>Activities</td>
+                <td>8212</td>
+            </tr><tr>
+                <td>Versions</td>
+                <td>
+                
+                <code>1.03</code>
+                
+                </td>
+            </tr><tr>
+                <td>Files failing validation</td>
+                <td>
+                
+                    17
+                
+                </td>
+            </tr>
+        </body>
+    </table>
+    </div>
+    </div>
+    </div>
+
+    
+    <div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h3 class="panel-title" id="list_fail_validation">Files Failing Validation</h3></div>
+          <!--<div class="panel-body">
+            <p>...</p>
+          </div>-->
+
+          <!-- List group -->
+          <ul class="list-group">
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-389">sida-389</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/389.xml">389.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/389.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-998">sida-998</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/998.xml">998.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/998.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-ar">sida-ar</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/AR.xml">AR.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/AR.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-bd">sida-bd</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/BD.xml">BD.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/BD.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-bo">sida-bo</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/BO.xml">BO.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/BO.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-gn">sida-gn</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/GN.xml">GN.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/GN.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-gt">sida-gt</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/GT.xml">GT.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/GT.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-kp">sida-kp</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/KP.xml">KP.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/KP.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-mg">sida-mg</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/MG.xml">MG.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/MG.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-mk">sida-mk</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/MK.xml">MK.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/MK.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-ml">sida-ml</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/ML.xml">ML.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/ML.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-ro">sida-ro</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/RO.xml">RO.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/RO.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-sc">sida-sc</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/SC.xml">SC.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/SC.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-sd">sida-sd</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/SD.xml">SD.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/SD.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-tg">sida-tg</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/TG.xml">TG.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/TG.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-ua">sida-ua</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/UA.xml">UA.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/UA.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-md-4 break">
+                  <a href="http://iatiregistry.org/dataset/sida-uy">sida-uy</a>
+                </div>
+                <div class="col-md-6 break">
+                  
+                  <a href="http://api.openaid.se/documents/xml/UY.xml">UY.xml</a>
+                  
+                </div>
+                <div class="col-md-2 break">
+                   
+                   <a href="http://validator.iatistandard.org/?url=http%3A//api.openaid.se/documents/xml/UY.xml">validator</a>
+                   
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+    </div>
+    </div>
+    
+
+
+  </div><!-- /.container -->
+
+</div>
+
+<div id="footer"><div class="container"><p class="text-muted"><a href="https://github.com/Bjwebb/IATI-Dashboard/">Source Code</a>. Generated on 2013-12-24 17:32:13 +0000 from data downloaded 2013-12-24 04:29:27 +0000. (NB This is the time the download completed. Changes in the previous few hours may not be present).</p></div></div>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+<script>$(function() { $("table.table").tablesorter(); });</script>
+</body>
+</html>
