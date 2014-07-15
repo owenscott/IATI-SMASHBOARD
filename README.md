@@ -1,6 +1,6 @@
 # IATI SMASHBOARD
 
-See the smashboard in action at http://iati.github.io/IATI-SMASHBOARD/
+See the smashboard in action at http://opengovhulk.github.io/IATI-SMASHBOARD/
 
 ## Installation
 
